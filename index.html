@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- https://www.youtube.com/watch?v=u9NFuoITzrs&ab_channel=WsCubeTech -->
-    
+
     <title>Quiz App</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="main">
-        <div id="box">
-            <h1>1) This is the Dummy Question</h1>
-            <div class="row">
-                <input id="option1" type="radio" value="a" name="option" />
-                <label for="option1">Option 1</label>
+    <section class="main">
+        <div class="container">
+            <div class="col">
+                <h3 id="questionBox">
+                    1) Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
+                </h3>
             </div>
-            <div class="row">
-                <input id="option2" type="radio" value="b" name="option" />
-                <label for="option2">Option 2</label>
+            <div class="col box">
+                <input name="option" type="radio" id="first" value="a" required>
+                <label for="first">Testing 1</label>
             </div>
-            <div class="row">
-                <input id="option3" type="radio" value="c" name="option" />
-                <label for="option3">Option 3</label>
+            <div class="col box">
+                <input name="option" type="radio" id="second" value="b" required>
+                <label for="second">Testing 2</label>
             </div>
-            <div class="row">
-                <input id="option4" type="radio" value="d" name="option" />
-                <label for="option4">Option 4</label>
+            <div class="col box">
+                <input name="option" type="radio" id="third" value="c" required>
+                <label for="third">Testing 3</label>
             </div>
-            <button class="btn">Summit</button>
+            <div class="col box">
+                <input name="option" type="radio" id="fourth" value="d" required>
+                <label for="fourth">Testing 4</label>
+            </div>
+            <button id="submit">Submit</button>
         </div>
-    </div>
-    
+    </section>
+
     <script src="index.js"></script>
 </body>
+
 </html>
